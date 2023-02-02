@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navegador">
+            <a href="../index.html">inicio</a>
+            <a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a>
+            <a href="../archivosHtml/aprender.html">aprender</a>
+            <a href="../archivosHtml/pagar.html">pagar</a>
+            <a href="../archivosHtml/contacto.html">contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contactoSection">
+            <h1>Contacto</h1>
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="../imagenes/icons8-facebook-50.png"
+                    alt="facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/icons8-whatsapp-50.png"
+                    alt="whatsapp"></a>
+            <a href="https://www.instagram.com//" target="_blank"><img src="../imagenes/icons8-instagram-50.png"
+                    alt="instagram"></a>
+
+            <ul class="ulContacto">
+                <li>email: mgdylanrojo@hotmail.com </li>
+                <li>telefono: 35164949</li>
+                <li>cordoba argentina</li>
+            </ul>
+
+
+        </section>
+        <div class="mapa"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d54476.687233149285!2d-64.22320172730781!3d-31.41983013900783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping%2C%20Avenida%20V%C3%A9lez%20Sarsfield%2C%20C%C3%B3rdoba!3m2!1d-31.419834899999998!2d-64.1881822!4m5!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2spatio%20olmos%20cordoba!3m2!1d-31.419834899999998!2d-64.1881822!5e0!3m2!1ses!2sar!4v1673990167476!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        <section class="formTipoCliente">
+            <h2>que tipo de cliente eres</h2>
+            <form action="ventas">
+
+                <select name="mayoristaMinorista" id="mayoromenor">
+                    <option value="">mayorista o minorista</option>
+                    <option value="mayorista">mayorista</option>
+                    <option value="minorista">minoristal</option>
+                </select><br>
+
+                <label for="nombre"> nombre</label>
+                <input type="text" placeholder="nombre" id="nombre">
+                <label for="telefono">telefono</label>
+                <input type="tel" placeholder="telefono" id="telefono">
+                <label for="email"> email</label>
+                <input type="email" placeholder="email" id="email">
+                <input class="boton" type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagar</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="pagar">
+
+
+    <header class="header headerPagar">
+        <nav class="navegador">
+            <a href="../index.html">inicio</a>
+            <a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a>
+            <a href="../archivosHtml/aprender.html">aprender</a>
+            <a href="../archivosHtml/pagar.html">pagar</a>
+            <a href="../archivosHtml/contacto.html">contacto</a>
+        </nav>
+    </header>
+
+
+
+    <section class="resultadoPagar">
+        <h4>producto:</h4>
+        <!-- necesito usar javascript para esto-->
+        <h4>subtotal:</h4>
+        <!-- necesito usar javascript para esto-->
+        <h4>envio:</h4>
+        <!-- necesito usar javascript para esto-->
+        <h4>total:</h4>
+        <!-- necesito usar javascript para esto-->
+    </section>
+
+    <section class="formularioPagar">
+        <h1>Facturacion y envio</h1>
+
+        <form class="formulario1s">
+            <label for="nombre"> nombre</label>
+            <input type="text" placeholder="nombre" id="nombre">
+            <label for="apellido">apellido</label><br>
+            <input type="text" placeholder="apellido" id="apellido">
+            <label for="dni"> dni</label><br>
+            <input type="number" placeholder="dni" id="dni">
+            <label for="calle"> calle</label>
+            <input type="text" placeholder="calle" id="nombre">
+            <label for="ciudad">ciudad</label>
+            <input type="text" placeholder="ciudad" id="ciudad">
+            <label for="provincia"> provincia</label>
+            <input type="text" placeholder="provincia" id="provincia">
+            <label for="codigopostal">codigo postal</label>
+            <input type="number" placeholder="codigo postal" id="codigo postal">
+            <label for="telefono"> telefono</label>
+            <input type="number" placeholder="telefono" id="telefono">
+            <fieldset>
+                <legend>metodo de pago</legend>
+
+                <input type="radio" id="debito" name="howto" value="debito" checked>
+                <label for="debito">tarjeta de debito</label>
+
+                <input type="radio" id="efectivo" name="howto" value="efectivo" checked>
+                <label for="efectivo">efectivo</label>
+
+            </fieldset>
+
+            <input class="boton" type="submit" value=" finalizar compra">
+            <label for="finalizarcompra"></label>
+        </form>
+    </section>
+
+
+</body>
+
+</html>
