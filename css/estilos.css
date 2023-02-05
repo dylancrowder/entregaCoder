@@ -1,241 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  
+  font-family: 'DM Sans', sans-serif;
+
 }
 
 body {
-  background-color: #e2f0f0;
-}
-
-/*INDEX*/
-footer {
-  border: 2px black inset;
-  padding-left: 10px;
-}
-
-.navegador {
-  text-align: center;
-  /* font-size: 30px; */
-  font-family: 'Roboto', sans-serif;
-  margin-top: 25px;
+  background-color: rgb(247, 243, 237);
 
 }
 
-h1 {
-  color: rgb(13, 98, 255);
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
+/* NAVEGADOR */
+
+.navegador {}
+
+.logo {}
+
+.menu {}
+
+/* --------------------- */
+
+
+@media (max-width: 600px) {
+
+  header {}
+
+  /*borra el section web */
+  .sectionWeb {
+    display: none;
+  }
+
+
+  /* navegador */
+  nav {
+    background-color: rgba(52, 31, 28, 0.992);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+
+  }
+
+
+  h1 {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+
+  }
+
+  .menu {}
+
+  ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 0.3rem;
+    padding-top: 15px;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+
+
+  }
+
+  a:hover {
+    text-decoration: underline
+  }
+
+
+  /* section productos */
+
+  .sectionMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 100%;
+  }
+
+  .imagenMobile {
+    height: 300px;
+    width: 80%;
+  }
+
+  button {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 10px 44px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+
+  }
+
+  h1 {
+    padding-top: 10px;
+
+
+  }
+
+
+  /* section aprender */
+
+
+  .aprender {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 100%;
+  }
+
+  .tituloAprender {
+    padding: 10PX;
+  }
+
+
+  .aprender iframe {
+
+    height: 300px;
+    width: 80%;
+
+
+  }
+
 
 }
 
+/* footer */
 
-/* PAGAR */
+/* contacto footer */
+.padreFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 100%;
+  background-color: rgba(52, 31, 28, 0.992);
 
-.headerPagar {
-  grid-area: header1;
-  border: black solid;
-  
 }
 
-.pagar {
-
-  color: rgb(7, 107, 9);
-
-
-  border: black solid;
-}
-
-.formularioPagar {
-  padding-bottom: 10px;
-  padding-top: 30px;
-  grid-area: formulario;
-  border: black solid;
-}
-
-
-.resultadoPagar {
-  grid-area: resultado;
-
-  border: black solid;
-}
-
-/* ///////////////////// */
 h4 {
+  text-align: center;
+  color: white;
 
-  font-family: 'Roboto', sans-serif;
 }
 
-
-h3 {
-  font-family: 'Roboto', sans-serif;
-  padding: 30px;
-}
-
-
-li {
+.padreFooter ol li {
+  font-size: 13px;
+  text-align: start;
+  margin-left: 10px;
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-.productos img {
-  width: 30%;
-  padding: 10px;
-}
-
-
-.productos {
-
-  margin: auto;
-}
-
-.tituloAprender {
-  text-align: center;
-}
-
-.aprender {
-  padding-left: 500px;
+  color: rgb(254, 248, 248);
 
 }
 
-.tituloProductos {
-  text-align: center;
-  padding: 30px;
-}
-
-.parrafoProductos {
-  border: 2px black inset;
-  margin: 50px 50px;
-  border-radius: 25px;
-  padding: 25px;
-}
-
-.contactoUl {
-  padding-top: 10px;
-  display: inline-block;
-}
-
-
+.contacto {}
 
 .redes {
-  display: inline-block;
-  padding-left: 20px;
-}
-
-
-.contactoSection {
-
-  margin: 30px;
-  padding-bottom: 30px;
-}
-
-.formTipoCliente {
-  padding: 30px;
-}
-
-.tituloProducto {
-  padding: 30px;
-  text-align: center;
-}
-
-.videoAprender {
-  margin-left: 30px;
-}
-
-.tituloAprender {
-  padding: 30px;
-}
-
-.bodyAprender {
-  margin: 30px;
-}
-
-.mapa {
-  padding: 30px;
-  border: 3px black;
-  margin: 30px;
-
-}
-
-.articulos {
-  margin: 30px;
-}
-
-.menuContacto {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: black;
-
-
-}
-
-.boton {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  margin: 10px;
   padding: 10px;
-  margin-top: 20px;
-  background-color: rgb(0, 1, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  color: #F8F9F9;
-}
-
-
-@media (min-width: 769px) {
-  .pagar {
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-
-      "header1 header1"
-      "formulario resultado"
-    ;
-    
-    grid-auto-columns: 50%;
-  }
- 
-
-  .headerPagar {
-    
-    height: 10px;
-
-  }
-
-  
+  border-color: white;
 
 }
 
+.redes a {
+  padding: 15px;
+}
 
-@media (max-width: 770px) {
-  .pagar {
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "header1 header1"
-      "formulario resultado"
+/* newslatter y copyright */
 
-    ;
-  }
+.newslater {
+  display: flex;
+  flex-direction: column;
+}
 
-
-  header {
-
-    font-size: 15px;
-
-  }
-
+h4 {
+  margin: 10px;
 }
 
 
+.newslater form {}
 
-
-
-
-/* esto es para el commit */
+p {
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  padding: 10px;
+}
