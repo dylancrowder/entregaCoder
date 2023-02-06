@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+
   font-family: 'DM Sans', sans-serif;
 
 }
@@ -22,12 +22,17 @@ body {
 /* --------------------- */
 
 
+
 @media (max-width: 600px) {
 
   header {}
 
   /*borra el section web */
   .sectionWeb {
+    display: none;
+  }
+
+  .tituloWeb {
     display: none;
   }
 
@@ -155,12 +160,6 @@ body {
 
 }
 
-h4 {
-  text-align: center;
-  color: white;
-
-}
-
 .padreFooter ol li {
   font-size: 13px;
   text-align: start;
@@ -196,6 +195,8 @@ h4 {
 
 h4 {
   margin: 10px;
+  text-align: center;
+  color: white;
 }
 
 
@@ -206,4 +207,203 @@ p {
   text-align: center;
   font-size: 11px;
   padding: 10px;
+}
+
+
+/* WEB */
+@media (min-width: 600px) {
+
+  /*borra el section mobile */
+  .sectionMobile {
+    display: none;
+  }
+
+  /* navegador */
+  nav {
+    background-color: rgba(52, 31, 28, 0.992);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+  .logo {
+    width: 10rem;
+    height: 5rem;
+    cursor: pointer;
+    margin: 30px;
+
+  }
+
+  ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 2rem;
+    padding-top: 15px;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+
+
+  }
+
+  a:hover {
+    text-decoration: underline
+  }
+
+
+  /* section productos */
+  h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 4rem;
+
+  }
+
+  .sectionWeb {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+  }
+
+  article{
+    border: black solid 3px;
+    border-radius: 20px;
+  }
+  .subtituloImg{
+    font-size: 2rem;
+    color: #000000;
+  }
+
+
+
+  .sectionWeb .imagen {
+    
+    
+    
+    height: 80%;
+    width: 100%;
+
+  }
+
+  button {
+  
+    background-color: transparent;
+    border-radius: 15px;
+    border: 3px solid #000000;
+    cursor: pointer;
+    color: #000000;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 10px 44px;
+    text-decoration: none;
+    margin: 30px;
+    padding: 20px;
+    margin-left: 50%;
+  transform: translateX(-50%);
+    
+    
+
+  }
+
+
+  /* section aprender */
+
+
+  .aprender {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .tituloAprender {
+    text-align: center;
+    padding: 20px;
+    font-size: 4rem;
+  }
+
+
+  .aprender iframe {
+
+    height: 70vh;
+    width: 80%;
+
+
+  }
+
+
+}
+
+/* footer */
+
+/* contacto footer*/
+.padreFooter .web {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 100%;
+  height: 40vh;
+  background-color: rgba(52, 31, 28, 0.992);
+
+}
+
+.padreFooter ol li {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 10px;
+  list-style-type: none;
+  color: rgb(254, 248, 248);
+
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  margin: 10px;
+  padding: 10px;
+  border-color: white;
+
+}
+
+.redes a {
+
+  padding: 10px;
+  filter: invert(1) sepia(1) hue-rotate(0deg) saturate(0%)
+}
+
+
+/* newslatter y copyright */
+
+.newslater {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  margin: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+
 }
