@@ -9,6 +9,7 @@
 body {
   background-color: rgb(247, 243, 237);
 
+
 }
 
 /* NAVEGADOR */
@@ -23,7 +24,7 @@ body {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 
   header {}
 
@@ -44,6 +45,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
 
 
   }
@@ -68,6 +70,7 @@ body {
     display: inline-block;
     margin: 0.3rem;
     padding-top: 15px;
+
 
   }
 
@@ -94,7 +97,7 @@ body {
   }
 
   .imagenMobile {
-    height: 300px;
+    height: 60%;
     width: 80%;
   }
 
@@ -137,9 +140,9 @@ body {
   }
 
 
-  .aprender iframe {
+  iframe {
 
-    height: 300px;
+    height: 400PX;
     width: 80%;
 
 
@@ -211,7 +214,7 @@ p {
 
 
 /* WEB */
-@media (min-width: 600px) {
+@media (min-width: 950px) {
 
   /*borra el section mobile */
   .sectionMobile {
@@ -219,12 +222,15 @@ p {
   }
 
   /* navegador */
-  nav {
+  .navegador {
     background-color: rgba(52, 31, 28, 0.992);
     display: flex;
     flex-direction: row;
+
     justify-content: space-between;
-    width: 100%;
+
+
+
 
   }
 
@@ -243,12 +249,14 @@ p {
     margin: 2rem;
     padding-top: 15px;
 
+
+
   }
 
   a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 100%;
 
 
   }
@@ -273,15 +281,16 @@ p {
     margin: 30px;
     justify-content: space-around;
     align-items: center;
-    
-  
+
+
   }
 
-  article{
+  article {
     border: black solid 3px;
     border-radius: 20px;
   }
-  .subtituloImg{
+
+  .subtituloImg {
     font-size: 2rem;
     color: #000000;
   }
@@ -289,16 +298,16 @@ p {
 
 
   .sectionWeb .imagen {
-    
-    
-    
+
+
+
     height: 80%;
     width: 100%;
 
   }
 
   button {
-  
+
     background-color: transparent;
     border-radius: 15px;
     border: 3px solid #000000;
@@ -311,9 +320,9 @@ p {
     margin: 30px;
     padding: 20px;
     margin-left: 50%;
-  transform: translateX(-50%);
-    
-    
+    transform: translateX(-50%);
+
+
 
   }
 
@@ -326,7 +335,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
   }
 
   .tituloAprender {
@@ -339,7 +348,7 @@ p {
   .aprender iframe {
 
     height: 70vh;
-    width: 80%;
+    width: 100%;
 
 
   }
@@ -352,16 +361,16 @@ p {
 /* contacto footer*/
 .padreFooter .web {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  flex: 100%;
+
   height: 40vh;
   background-color: rgba(52, 31, 28, 0.992);
 
 }
 
 .padreFooter ol li {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   margin-left: 10px;
   list-style-type: none;
@@ -390,8 +399,29 @@ p {
 /* newslatter y copyright */
 
 .newslater {
+
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.newslaterForm .correo {
+  padding-left: 20%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+  background-color: burlywood;
+
+}
+
+.boton {
+  padding-inline: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+  background-color: burlywood;
 }
 
 h4 {
@@ -401,9 +431,20 @@ h4 {
   color: white;
 }
 
+
+
 .copyright {
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
 
 }
+
+
+
+/* NUESTROS PRODUCTOS MOBILE */
+
+@media (max-width: 950px){
+  
+}
+/* ----------------------------- */
