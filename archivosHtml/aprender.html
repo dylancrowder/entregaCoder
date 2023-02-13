@@ -13,28 +13,42 @@
 
   <header>
     <nav class="navegador">
-      <a href="../index.html">inicio</a>
-      <a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a>
-      <a href="../archivosHtml/aprender.html">aprender</a>
-      <a href="../archivosHtml/pagar.html">pagar</a>
-      <a href="../archivosHtml/contacto.html">contacto</a>
+
+      <div class="logotipo">
+        <!-- <div class="logo"> -->
+        <a title="inicio" href="../index.html"><img class="logo"
+            src="../imagenes/WhatsApp_Image_2023-02-02_at_16.42.08-removebg-preview.png" alt="vegetacion" /></a>
+        <!--  </div> -->
+      </div>
+
+      <div class="menu">
+        <ul>
+
+          <li><a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a></li>
+          <li><a href="../archivosHtml/aprender.html">aprender</a></li>
+          <li><a href="../archivosHtml/pagar.html">pagar</a></li>
+          <li><a href="../archivosHtml/contacto.html">contacto</a></li>
+        </ul>
+      </div>
+
     </nav>
   </header>
-  <main>
+  <main class="mainAprender">
     <h1 class="tituloAprender">Aprender</h1>
 
     <section class="videoAprender">
 
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bdt5NYNGPdc" title="YouTube video player"
-        frameborder="0"
+      <div class="contenedorIframe"></div>
+      <iframe class=videoIframe" width="560" height="315" src="https://www.youtube.com/embed/bdt5NYNGPdc"
+        title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </section>
 
     <article>
       <h3>como utilizar</h3>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae libero voluptas obcaecati repudiandae
+      <p class="parrafoAprender"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae libero voluptas
+        obcaecati repudiandae
         perspiciatis corporis nam odit sunt laboriosam repellendus, deserunt quisquam aut? Itaque obcaecati magni,
         consequuntur reiciendis id eius.
         Pariatur recusandae, tempore suscipit deserunt numquam aliquam doloremque expedita animi, exercitationem
@@ -51,7 +65,8 @@
 
     <article>
       <h3>pasos para mezclar la solucion nutritiva</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas necessitatibus veniam, unde voluptas expedita
+      <p class="parrafoAprender">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas necessitatibus veniam,
+        unde voluptas expedita
         molestias aliquid delectus! Id illo quo at, saepe vero possimus non odit laborum iusto dolor aliquid?
         Reprehenderit necessitatibus culpa minus accusamus ut nam nobis, veniam, eveniet maxime tenetur, eaque
         provident. Rerum numquam magnam odit aliquid ab pariatur perferendis quibusdam autem, aut sed esse repellat
@@ -67,6 +82,42 @@
 
     </article>
   </main>
+
+  <footer class="padreFooter web">
+    <div class="contacto">
+      <h4>Contacto</h4>
+      <ol class="informacionContacto">
+        <li>email: mgdylanrojo@hotmail.com </li>
+        <li>telefono: 35164949</li>
+        <li>cordoba argentina</li>
+
+      </ol>
+    </div>
+    <div class="redes">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="../imagenes/icons8-facebook-50.png"
+          alt="facebook"></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/icons8-whatsapp-50.png" alt="whatsapp"></a>
+      <a href="https://www.instagram.com//" target="_blank"><img src="../imagenes/icons8-instagram-50.png"
+          alt="instagram"></a>
+    </div>
+
+    <div class="newslater">
+      <h4>newslatter</h4>
+      <form class="newslaterForm" action="informacion">
+        <input class="correo" type="email" placeholder="email" id="email">
+        <input class="boton" type="submit">
+
+      </form>
+
+
+    </div>
+    <p class="copyright">Copyright © 2022 cerro negro. todos los derechos reservados. la informacion contenida en esta
+      website
+      es solo para uso general de gente.</p>
+  </footer>
+
+
+
 </body>
 
 </html>

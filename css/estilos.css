@@ -9,19 +9,7 @@
 body {
   background-color: rgb(247, 243, 237);
 
-
 }
-
-/* NAVEGADOR */
-
-.navegador {}
-
-.logo {}
-
-.menu {}
-
-/* --------------------- */
-
 
 
 @media (max-width: 950px) {
@@ -37,7 +25,6 @@ body {
     display: none;
   }
 
-
   /* navegador */
   nav {
     background-color: rgba(52, 31, 28, 0.992);
@@ -46,10 +33,7 @@ body {
     justify-content: space-between;
     width: 100%;
 
-
-
   }
-
 
   h1 {
     padding: 10px;
@@ -61,8 +45,6 @@ body {
     cursor: pointer;
 
   }
-
-  .menu {}
 
   ul li {
 
@@ -101,7 +83,8 @@ body {
     width: 80%;
   }
 
-  button {
+   button {
+
     background-color: transparent;
     border-radius: 15px;
     border: 2px solid #000000;
@@ -120,13 +103,9 @@ body {
   h1 {
     padding-top: 10px;
 
-
   }
 
-
   /* section aprender */
-
-
   .aprender {
 
     display: flex;
@@ -139,16 +118,12 @@ body {
     padding: 10PX;
   }
 
-
   iframe {
 
     height: 400PX;
     width: 80%;
 
-
   }
-
-
 }
 
 /* footer */
@@ -172,7 +147,6 @@ body {
 
 }
 
-.contacto {}
 
 .redes {
   display: flex;
@@ -202,7 +176,6 @@ h4 {
   color: white;
 }
 
-
 .newslater form {}
 
 p {
@@ -211,7 +184,6 @@ p {
   font-size: 11px;
   padding: 10px;
 }
-
 
 /* WEB */
 @media (min-width: 950px) {
@@ -226,11 +198,7 @@ p {
     background-color: rgba(52, 31, 28, 0.992);
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
-
-
-
 
   }
 
@@ -248,8 +216,6 @@ p {
     display: inline-block;
     margin: 2rem;
     padding-top: 15px;
-
-
 
   }
 
@@ -282,12 +248,6 @@ p {
     justify-content: space-around;
     align-items: center;
 
-
-  }
-
-  article {
-    border: black solid 3px;
-    border-radius: 20px;
   }
 
   .subtituloImg {
@@ -295,40 +255,32 @@ p {
     color: #000000;
   }
 
-
-
   .sectionWeb .imagen {
-
-
 
     height: 80%;
     width: 100%;
 
   }
 
-  button {
-
-    background-color: transparent;
-    border-radius: 15px;
+   button  {
+    background-color: burlywood;
+    border-radius: 20px;
     border: 3px solid #000000;
     cursor: pointer;
     color: #000000;
     font-family: Arial;
-    font-size: 19px;
-    padding: 10px 44px;
+    font-size: 15px;
+    padding: 10px;
     text-decoration: none;
     margin: 30px;
-    padding: 20px;
     margin-left: 50%;
     transform: translateX(-50%);
-
-
-
+  }
+  .colorBotonProductos{
+    color: #000;
   }
 
-
-  /* section aprender */
-
+  /* setion aprender */
 
   .aprender {
 
@@ -347,8 +299,8 @@ p {
 
   .aprender iframe {
 
-    height: 70vh;
-    width: 100%;
+    height: 100vh;
+    width: 90%;
 
 
   }
@@ -406,12 +358,13 @@ p {
 }
 
 .newslaterForm .correo {
-  padding-left: 20%;
+  padding-inline: 3 0px;
   border: none;
   outline: none;
   border-bottom: 2px solid black;
   border-radius: 20px;
   background-color: burlywood;
+  text-align: start;
 
 }
 
@@ -431,8 +384,6 @@ h4 {
   color: white;
 }
 
-
-
 .copyright {
   color: white;
   text-align: center;
@@ -440,11 +391,428 @@ h4 {
 
 }
 
-
-
 /* NUESTROS PRODUCTOS MOBILE */
 
-@media (max-width: 950px){
-  
+@media (max-width: 950px) {
+  /* header */
+
+  .headerProductos {
+    display: flex;
+
+  }
+
+  /* informacion de productos*/
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .productos {
+    width: 100%;
+  }
+
+  .productos h1 {
+    text-align: center;
+  }
+
+  .parrafoProductos {
+    color: #ffffff;
+    font-size: 15px;
+    background-color: rgb(98, 97, 97);
+    margin: 10px;
+    border-radius: 20px;
+
+  }
+
+  /* productos con imagenes */
+
+  .articulosImagenes img {
+    width: 100%;
+  }
+
+  .articulosImagenes h2 {
+    text-align: center;
+
+  }
+
+  .articulosImagenes article button {
+
+    border-radius: 20px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    color: #000000;
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: burlywood;
+
+  }
+
+  .articulosImagenes h4 {
+    color: #000000;
+
+  }
+
+  .articulosImagenes p {
+    color: #000;
+  }
+
 }
+
+.articulosImagenes article .botonProductos {
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+}
+
 /* ----------------------------- */
+
+/* SECCION PRODUCTOS WEB */
+
+@media (min-width: 950px) {
+
+  /* informacion de productos*/
+
+  nav {
+    background-color: rgba(52, 31, 28, 0.992);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .productos {
+    width: 100%;
+  }
+
+  .productos h1 {
+    text-align: center;
+  }
+
+  .parrafoProductos {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: rgb(98, 97, 97);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 50px;
+
+  }
+
+  /* productos con imagenes */
+  .articulosImagenes img {
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+  }
+
+  .articulosImagenes h2 {
+
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+
+  }
+
+  .articulosImagenes h4 {
+    color: #000000;
+
+  }
+
+  .articulosImagenes p {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .articulosImagenes article button {
+
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    color: #000000;
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: burlywood;
+
+  }
+
+  .articulosImagenes article .botonProductos {
+    color: #000;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+}
+
+/* APRENDER mobile */
+@media (max-width: 950px) {
+
+  .videoAprender {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainAprender {
+    display: flex;
+  }
+
+  .mainAprender h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .mainAprender h1 {
+    text-align: center;
+  }
+
+  .parrafoAprender {
+    color: #000;
+    font-size: 25px;
+    margin: 25px;
+    background-color: rgb(98, 97, 97);
+    border-radius: 20px;
+  }
+
+}
+
+/* ================= */
+
+/* APRENDER WEB */
+@media (max-width: 950px) {
+
+  .videoAprender {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainAprender h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .mainAprender h1 {
+    text-align: center;
+  }
+
+  .parrafoAprender {
+    color: #000;
+    font-size: 25px;
+    margin: 25px;
+    background-color: rgb(98, 97, 97);
+    border-radius: 20px;
+  }
+
+}
+
+/* ================= */
+
+/* APRENDER WEB */
+@media (min-width: 950px) {
+
+  .videoAprender {
+    display: flex;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 80%;
+
+  }
+
+
+  .mainAprender {
+    display: flex;
+  }
+
+  .mainAprender h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .mainAprender h1 {
+    text-align: center;
+  }
+
+  .parrafoAprender {
+    color: #000;
+    font-size: 25px;
+    margin: 25px;
+    background-color: rgb(98, 97, 97);
+    border-radius: 20px;
+  }
+
+}
+
+/* ================= */
+
+/* PAGAR web */
+
+@media (min-width: 950px) {
+
+  .mainPagar {
+
+    display: grid;
+    grid-template-areas:
+      "formPagar informacionPagar"
+    ;
+  }
+
+  .resultadoPagar {
+    grid-area: informacionPagar;
+
+  }
+
+  .formularioPagar {
+    grid-area: formPagar;
+
+  }
+
+  .infomacionFormulario {
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .infomacionFormulario input {
+
+    background-color: burlywood;
+    padding: 10px 100px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+  .resultadoPagar h4 {
+    color: #000;
+    text-align: start;
+    border: #000 solid 2px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+  }
+
+  .radioBoton {
+    padding: 20px;
+    background: #f0f0f0;
+    border: 2px solid burlywood;
+    margin: 20px;
+    padding: 20px;
+
+  }
+
+  .contenedorRadio {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .radioBoton input {}
+
+}
+
+/* PAGAR MOBILE */
+@media (max-width: 950px) {
+
+
+  .mainPagar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infomacionFormulario {
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+
+
+
+
+  }
+
+  .infomacionFormulario input {
+
+    background-color: burlywood;
+    padding: 10px 100px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+  .resultadoPagar h4 {
+    color: #000;
+    text-align: start;
+    border: #000 solid 2px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+  }
+
+  .radioBoton {
+
+    background: #f0f0f0;
+    border: 2px solid burlywood;
+    margin: 20px;
+
+
+  }
+
+  .contenedorRadio {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    column-gap: 20px;
+    border: #000 solid 2px;
+  }
+
+  .infomacionFormulario {
+    order: 1;
+  }
+
+  .resultadoPagar {
+    order: 2;
+  }
+
+}
+
+/* ==================== */
+/* CONTACTO WEB */
+
+@media (min-width: 950px) {
+  .contactoManin {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redes .redesContacto{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+    border-color: white;
+  }
+
+
+}

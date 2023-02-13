@@ -12,64 +12,127 @@
 <body class="pagar">
 
 
-    <header class="header headerPagar">
-        <nav class="navegador">
-            <a href="../index.html">inicio</a>
-            <a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a>
-            <a href="../archivosHtml/aprender.html">aprender</a>
-            <a href="../archivosHtml/pagar.html">pagar</a>
-            <a href="../archivosHtml/contacto.html">contacto</a>
+    <header class="headerProductos">
+        <nav class="navegadorProductos">
+
+            <div class="logotipo">
+                <!-- <div class="logo"> -->
+                <a title="inicio" href="../index.html"><img class="logo"
+                        src="../imagenes/WhatsApp_Image_2023-02-02_at_16.42.08-removebg-preview.png"
+                        alt="vegetacion" /></a>
+                <!--  </div> -->
+            </div>
+
+            <div class="menu">
+                <ul>
+
+                    <li><a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a></li>
+                    <li><a href="../archivosHtml/aprender.html">aprender</a></li>
+                    <li><a href="../archivosHtml/pagar.html">pagar</a></li>
+                    <li><a href="../archivosHtml/contacto.html">contacto</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
+    <h1>Facturacion y envio</h1>
+    <main class="mainPagar">
+
+        <div class="resultadoPagar">
+            <h4>producto:</h4>
+            <!-- necesito usar javascript para esto-->
+            <h4>subtotal:</h4>
+            <!-- necesito usar javascript para esto-->
+            <h4>envio:</h4>
+            <!-- necesito usar javascript para esto-->
+            <h4>total:</h4>
+            <!-- necesito usar javascript para esto-->
+
+        </div>
+
+
+        <div class="formularioPagar">
+
+
+            <form class="infomacionFormulario">
+                <label for="nombre"> nombre</label>
+                <input type="text" placeholder="nombre" id="nombre">
+                <label for="apellido">apellido</label><br>
+                <input type="text" placeholder="apellido" id="apellido">
+                <label for="dni"> dni</label><br>
+                <input type="number" placeholder="dni" id="dni">
+                <label for="calle"> calle</label>
+                <input type="text" placeholder="calle" id="nombre">
+                <label for="ciudad">ciudad</label>
+                <input type="text" placeholder="ciudad" id="ciudad">
+                <label for="provincia"> provincia</label>
+                <input type="text" placeholder="provincia" id="provincia">
+                <label for="codigopostal">codigo postal</label>
+                <input type="number" placeholder="codigo postal" id="codigo postal">
+                <label for="telefono"> telefono</label>
+                <input type="number" placeholder="telefono" id="telefono">
+
+
+                <fieldset class="radioBoton">
+                    <div class="contenedorRadio">
 
 
 
-    <section class="resultadoPagar">
-        <h4>producto:</h4>
-        <!-- necesito usar javascript para esto-->
-        <h4>subtotal:</h4>
-        <!-- necesito usar javascript para esto-->
-        <h4>envio:</h4>
-        <!-- necesito usar javascript para esto-->
-        <h4>total:</h4>
-        <!-- necesito usar javascript para esto-->
-    </section>
+                        <input type="radio" id="debito" name="howto" value="debito" checked>
+                        <label for="debito">tarjeta de debito</label>
 
-    <section class="formularioPagar">
-        <h1>Facturacion y envio</h1>
+                        <input type="radio" id="efectivo" name="howto" value="efectivo" checked>
+                        <label for="efectivo">efectivo</label>
+                    </div>
 
-        <form class="formulario1s">
-            <label for="nombre"> nombre</label>
-            <input type="text" placeholder="nombre" id="nombre">
-            <label for="apellido">apellido</label><br>
-            <input type="text" placeholder="apellido" id="apellido">
-            <label for="dni"> dni</label><br>
-            <input type="number" placeholder="dni" id="dni">
-            <label for="calle"> calle</label>
-            <input type="text" placeholder="calle" id="nombre">
-            <label for="ciudad">ciudad</label>
-            <input type="text" placeholder="ciudad" id="ciudad">
-            <label for="provincia"> provincia</label>
-            <input type="text" placeholder="provincia" id="provincia">
-            <label for="codigopostal">codigo postal</label>
-            <input type="number" placeholder="codigo postal" id="codigo postal">
-            <label for="telefono"> telefono</label>
-            <input type="number" placeholder="telefono" id="telefono">
-            <fieldset>
-                <legend>metodo de pago</legend>
 
-                <input type="radio" id="debito" name="howto" value="debito" checked>
-                <label for="debito">tarjeta de debito</label>
+                </fieldset>
 
-                <input type="radio" id="efectivo" name="howto" value="efectivo" checked>
-                <label for="efectivo">efectivo</label>
+                <input class="boton" type="submit" value=" finalizar compra">
+                <label for="finalizarcompra"></label>
+            </form>
+        </div>
 
-            </fieldset>
 
-            <input class="boton" type="submit" value=" finalizar compra">
-            <label for="finalizarcompra"></label>
-        </form>
-    </section>
+    </main>
+
+
+    <footer class="padreFooter web">
+        <div class="contacto">
+            <h4>Contacto</h4>
+            <ol class="informacionContacto">
+                <li>email: mgdylanrojo@hotmail.com </li>
+                <li>telefono: 35164949</li>
+                <li>cordoba argentina</li>
+
+            </ol>
+        </div>
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="../imagenes/icons8-facebook-50.png"
+                    alt="facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/icons8-whatsapp-50.png"
+                    alt="whatsapp"></a>
+            <a href="https://www.instagram.com//" target="_blank"><img src="../imagenes/icons8-instagram-50.png"
+                    alt="instagram"></a>
+        </div>
+
+        <div class="newslater">
+            <h4>newslatter</h4>
+            <form class="newslaterForm" action="informacion">
+                <input class="correo" type="email" placeholder="email" id="email">
+                <input class="boton" type="submit">
+
+            </form>
+
+
+        </div>
+        <p class="copyright">Copyright © 2022 cerro negro. todos los derechos reservados. la informacion contenida en
+            esta website
+            es solo para uso general de gente.</p>
+    </footer>
+
+
+
 
 
 </body>
