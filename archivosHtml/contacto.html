@@ -7,93 +7,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
 
+
+
     <header class="headerProductos">
-        <nav class="navegadorProductos">
-
-            <div class="logotipo">
-                <!-- <div class="logo"> -->
-                <a title="inicio" href="../index.html"><img class="logo"
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 contenedorBootstrap">
+            <div class="container-fluid contenedorBoot">
+                <a class="navbar-brand" title="inicio" href="../index.html"><img class="logo"
                         src="../imagenes/WhatsApp_Image_2023-02-02_at_16.42.08-removebg-preview.png"
-                        alt="vegetacion" /></a>
-                <!--  </div> -->
+                        alt="vegetacion" /></a> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav caracteresNav">
+                        <a class="nav-link active" aria-current="page"
+                            href="../archivosHtml/contacto.html">Contactos</a>
+                        <a class="nav-link" href="../archivosHtml/pagar.html">Pagar</a>
+                        <a class="nav-link" href="../archivosHtml/aprender.html">Aprender</a>
+                        <a class="nav-link " href="../archivosHtml/nuestrosproductos.html">Nuestros Productos</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="menu">
-                <ul>
-
-                    <li><a href="../archivosHtml/nuestrosproductos.html">nuestros productos</a></li>
-                    <li><a href="../archivosHtml/aprender.html">aprender</a></li>
-                    <li><a href="../archivosHtml/pagar.html">pagar</a></li>
-                    <li><a href="../archivosHtml/contacto.html">contacto</a></li>
-                </ul>
-            </div>
-
         </nav>
     </header>
-    <main class="contactoMain">
-        <h1>Contacto</h1>
-        <h3>Nuestras redes</h2>
-            <section class="contacto">
 
-                <div class="redess redesContacto">
 
-                <a href="https://es-la.facebook.com/" target="_blank"><img src="../imagenes/icons8-facebook-50.png"
-                        alt="facebook"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/icons8-whatsapp-50.png"
-                        alt="whatsapp"></a>
-                <a href="https://www.instagram.com//" target="_blank"><img src="../imagenes/icons8-instagram-50.png"
-                        alt="instagram"></a>
 
+
+    <div class="d-flex justify-content-center  g-0">
+
+
+
+        <div class="formularioContenedor m-5 ">
+
+            <div class="m-1 p-3 padreForm">
+                <div class="contenedor1  m-1 d-flex flex-column ">
+                    <h1>Contactanos</h1>
+                    <input type="text" class="m-3 p-3 text-center formularioContact" name="nombre" id="nombre"
+                        placeholder="Ingrese su nombre">
+                    <input type="text" class="m-3 p-3 formularioContact text-center" name="apellido" id="apellido"
+                        placeholder="Ingrese su apellido">
+                    <input type="email" class="m-3  p-3 formularioContact text-center" name="email" id="email"
+                        placeholder="Ingrese su email">
+                    <input type="text" class="m-3  p-5 fs-0 formularioContact text-center" name="mensaje" id="mensaje"
+                        placeholder="Ingrese su mensaje">
+                    <button class="m-3  p-3  fs-0">Enviar</button>
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="padreFooter web">
+        <div class="contacto">
+            <h4 class="h4Contacto">Contacto</h4>
+            <ol class="informacionContacto">
+                <li>email: mgdylanrojo@hotmail.com </li>
+                <li>telefono: 35164949</li>
+                <li>cordoba argentina</li>
+
+            </ol>
+        </div>
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="../imagenes/icons8-facebook-50.png"
+                    alt="facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/icons8-whatsapp-50.png"
+                    alt="whatsapp"></a>
+            <a href="https://www.instagram.com//" target="_blank"><img src="../imagenes/icons8-instagram-50.png"
+                    alt="instagram"></a>
+        </div>
+
+        <div class="newslater">
+            <h4  class="h4Contacto">newslatter</h4>
+            <form class="newslaterForm" action="informacion">
+                <input class="correo" type="email" placeholder="email" id="email">
+                <input class="boton" type="submit">
+
+            </form>
 
 
+        </div>
+        <p class="copyright">Copyright © 2022 cerro negro. todos los derechos reservados. la informacion
+            contenida
+            en
+            esta
+            website
+            es solo para uso general de gente.</p>
+    </footer>
 
-                <ul class="ulContacto">
-
-                    <li>email: mgdylanrojo@hotmail.com </li>
-                    <li>telefono: 35164949</li>
-                    <li>cordoba argentina</li>
-                </ul>
-
-            </section>
-             </section>
-                <div class="mapa"><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d54476.687233149285!2d-64.22320172730781!3d-31.41983013900783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping%2C%20Avenida%20V%C3%A9lez%20Sarsfield%2C%20C%C3%B3rdoba!3m2!1d-31.419834899999998!2d-64.1881822!4m5!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2spatio%20olmos%20cordoba!3m2!1d-31.419834899999998!2d-64.1881822!5e0!3m2!1ses!2sar!4v1673990167476!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
-                <section class="formTipoCliente">
-                    <h2>Contactanos</h2>
-                    <form action="ventas">
-
-                        <select>
-                            <option selected>que tipo de cliente eres</option>
-                            <option value="1">mayorista</option>
-                            <option value="2">minorista</option>
-
-                        </select>
-
-                        <label for="nombre"> nombre</label>
-                        <input type="text" placeholder="nombre" id="nombre">
-                        <label for="telefono">telefono</label>
-                        <input type="tel" placeholder="telefono" id="telefono">
-                        <label for="email"> email</label>
-                        <input type="email" placeholder="email" id="email">
-                        <input class="boton" type="submit">
-                    </form>
-                </section>
-    </main>
-    <!-- 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
